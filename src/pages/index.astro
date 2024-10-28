@@ -1,7 +1,6 @@
 ---
-
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
 import '../styles/global.css'
 
 const pageTitle = "Home";
@@ -14,9 +13,7 @@ const pageTitle = "Home";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav>
-			<Navigation />
-		</nav>
+		<Header />
 		<h1>Hi there! I'm Stacy, a Software Engineer in the Heart of NYC.</h1>
 		<Footer/>
 	</body>

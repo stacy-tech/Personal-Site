@@ -1,7 +1,6 @@
 ---
-
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Navigation from '../components/Navigation.astro';
 import '../styles/global.css'
 
 const pageTitle = "Projects";
@@ -15,9 +14,7 @@ const pageTitle = "Projects";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<nav>
-            <Navigation/>
-        </nav>
+		<Header />
 		<h1>{pageTitle}</h1>
         <p>This is where I'll place my projects</p>
 		<Footer />
