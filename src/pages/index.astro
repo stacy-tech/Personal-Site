@@ -1,16 +1,21 @@
 ---
+import '../styles/global.css'
 
+const pageTitle = "Home";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Personal Site</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/about/">About</a>
+			<a href="/projects/">Projects</a>
+		</nav>
 		<h1>Hi there! I'm Stacy, a Software Engineer in the Heart of NYC.</h1>
 	</body>
 	<footer>
