@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css'
 const pageTitle = "About Me";
 ---
@@ -11,9 +13,7 @@ const pageTitle = "About Me";
 	</head>
 	<body>
 		<nav>
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
-			<a href="/projects/">Projects</a>
+			<Navigation/>
 		</nav>
 		<h1>{pageTitle}</h1>
         <p>Hello and welcome! I'm Stacy, a NYC-based software engineer with a passion for 
@@ -24,12 +24,14 @@ const pageTitle = "About Me";
             the vibrant streets of New York, sipping coffee in a cozy cafe, or on the hunt
             for the city's best bites and hidden gems. Join me on this exciting journey as we create,
             inspire, and innovate together! </p>
+
+		<Footer />	
 	</body>
-    <footer>
+    <!-- <footer>
 		<p>
 			Connect with me: <a href="https://github.com/stacy-tech" target="_blank">GitHub</a>
 			<a href="https://linkedin.com/in/stacy-d" target="_blank">Linkedin</a>
 		</p>
 		<p>&copy; 2024 Stacy. All rights reserved.</p>
-	</footer>
+	</footer> -->
 </html>

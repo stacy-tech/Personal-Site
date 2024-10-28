@@ -1,4 +1,7 @@
 ---
+
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css'
 
 const pageTitle = "Home";
@@ -12,17 +15,16 @@ const pageTitle = "Home";
 	</head>
 	<body>
 		<nav>
-			<a href="/">Home</a>
-			<a href="/about/">About</a>
-			<a href="/projects/">Projects</a>
+			<Navigation />
 		</nav>
 		<h1>Hi there! I'm Stacy, a Software Engineer in the Heart of NYC.</h1>
+		<Footer/>
 	</body>
-	<footer>
+	<!-- <footer>
 		<p>
 			Connect with me: <a href="https://github.com/stacy-tech" target="_blank">GitHub</a>
 			<a href="https://linkedin.com/in/stacy-d" target="_blank">Linkedin</a>
 		</p>
 		<p>&copy; 2024 Stacy. All rights reserved.</p>
-	</footer>
+	</footer> -->
 </html>
