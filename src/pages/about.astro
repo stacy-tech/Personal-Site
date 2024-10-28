@@ -1,16 +1,21 @@
+---
+import '../styles/global.css'
+const pageTitle = "About Me";
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <!-- <a href="/">Projects</a> -->
-		<h1>About Me</h1>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/about/">About</a>
+			<a href="/projects/">Projects</a>
+		</nav>
+		<h1>{pageTitle}</h1>
         <p>Hello and welcome! I'm Stacy, a NYC-based software engineer with a passion for 
             turning ideas into reality. With a background in web development, I thrive 
             on creating innovative solutions that make a difference. I love diving into new
